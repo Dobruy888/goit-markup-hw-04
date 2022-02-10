@@ -47,7 +47,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
+  outline: 2px solid tomato;
   margin: 0 auto;
 }
 .page-header {
@@ -118,10 +118,20 @@ body {
 /* Герой */
 .hero-section {
   background-color: var(--bg-color-hero);
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/heroimg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
@@ -149,6 +159,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Преимущества */
+
 .benefits-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -156,6 +167,32 @@ body {
 .box {
   display: flex;
 }
+.benefits .item::before {
+  display: inline-block;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  outline: 1px solid greenyellow;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+}
+
+.antenna::before {
+  background-image: url('../images/antenna.svg');
+}
+.clock::before {
+  background-image: url('..//images/clock.svg');
+}
+.diagram::before {
+  background-image: url('../images/diagram.svg');
+}
+.astronaut::before {
+  background-image: url('../images/astronaut.svg');
+}
+
 .benefits .item {
   width: 270px;
 }
@@ -188,7 +225,6 @@ body {
   margin-left: 30px;
 }
 .section-title {
-  margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -207,14 +243,6 @@ body {
 }
 .team-pic {
   display: flex;
-}
-.team-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 .team-photo {
   margin-bottom: 30px;
@@ -245,6 +273,26 @@ body {
 .team-info-title {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+/* --------Постоянные клиенты---------- */
+.clients-section {
+  background-color: var(--button-bg-color);
+}
+.clients-list {
+  display: flex;
+  padding-bottom: 82px;
+}
+.clients-logo {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  left: 415px;
+  top: 2493px;
+  padding-bottom: 82px;
+}
+.clients-logo:not(:last-child) {
+  margin-right: 30px;
 }
 /* Кнопки портфолио */
 .section-main {
