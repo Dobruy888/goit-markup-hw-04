@@ -167,7 +167,7 @@ body {
 .box {
   display: flex;
 }
-.benefits .item::before {
+/* .benefits .item::before {
   display: inline-block;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -178,7 +178,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   content: '';
-}
+} */
 
 .antenna::before {
   background-image: url('../images/antenna.svg');
@@ -311,7 +311,7 @@ body {
 
 /* --------Постоянные клиенты---------- */
 .clients-section {
-  background-color: var(--button-bg-color);
+  background-color: var(--primary-white-color);
 }
 .clients-list {
   display: flex;
@@ -331,6 +331,13 @@ body {
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  fill: #afb1b8;
+}
+.clients-item:hover {
+  border-color: var(--accent-color);
+}
+.clients-logo:hover .client-logo-link {
+  fill: var(--accent-color);
 }
 
 /* Кнопки портфолио */
