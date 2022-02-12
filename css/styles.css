@@ -83,6 +83,7 @@ body {
   letter-spacing: 0.02em;
 }
 .title-info {
+  margin-right: 30px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -100,6 +101,7 @@ body {
 .site-contacts {
   display: flex;
   margin-left: auto;
+  margin-right: 30px;
 
   color: var(--header-contacts-text-color);
   font-weight: 500;
@@ -113,6 +115,14 @@ body {
 .site-contacts:hover,
 .site-contacts:focus {
   color: var(--accent-color);
+}
+.heder-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heder-contacts-icon {
+  margin-right: 10px;
 }
 
 /* Герой */
@@ -159,7 +169,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Преимущества */
-
 .benefits-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -167,30 +176,16 @@ body {
 .box {
   display: flex;
 }
-/* .benefits .item::before {
-  display: inline-block;
+
+.box-icon {
   background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  outline: 1px solid greenyellow;
-  background-repeat: no-repeat;
-  background-position: center;
-  content: '';
-} */
-
-.antenna::before {
-  background-image: url('../images/antenna.svg');
-}
-.clock::before {
-  background-image: url('..//images/clock.svg');
-}
-.diagram::before {
-  background-image: url('../images/diagram.svg');
-}
-.astronaut::before {
-  background-image: url('../images/astronaut.svg');
 }
 
 .benefits .item {
@@ -237,7 +232,7 @@ body {
 }
 /* Наша команда */
 .team-section {
-  background-image: linear-gradient(to top, #f5f4fa 50%, #ffffff 50%);
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
