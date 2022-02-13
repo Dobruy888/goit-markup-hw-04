@@ -27,23 +27,29 @@
           <!--навигация-->
           <ul class="site-nav list">
             <li class="item">
-              <a href="index.html" class="site-nav link">Студия</a>
+              <a href="index.html" class="title-info site-nav link ">Студия</a>
             </li>
             <li class="item">
-              <a href="portfolio.html" class="site-nav link current">Портфолио</a>
+              <a href="portfolio.html" class="title-info site-nav link current">Портфолио</a>
             </li>
-            <li class="item"><a href="" class="site-nav link">Контакты</a></li>
+            <li class="item"><a href="" class="title-info site-nav link">Контакты</a></li>
           </ul>
         </nav>
         <!--контакты-->
         <ul class="site-contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="site-contacts link">info@devstudio.com</a>
+          <div class="heder-contacts">
+          <li class="item-contacts">
+            <a href="mailto:info@devstudio.com" class="mail-icon title-info site-contacts link"><svg class="mail-icon mail-icon-click" width="16" height="12">
+              <use href="./images/svgsprite/symbol-defs.svg#icon-mail"></use>
+            </svg>info@devstudio.com</a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="site-contacts link">+38 096 111 11 11</a>
+          <li class="">
+            <a href="tel:+380961111111" class="tel-icon title-info site-contacts link"><svg class="tel-icon tel-icon-click" width="10" height="16">
+              <use href="./images/svgsprite/symbol-defs.svg#icon-tel"></use>
+            </svg> +38 096 111 11 11</a>
           </li>
         </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -51,7 +57,7 @@
       <section class="section-main">
         <div class="container">
           <h1 class="visually-hidden">Примеры работ</h1>
-          <ul class="main-btn list">
+          <ul class="main-btn">
             <li class="item"><button class="link" type="button">Все</button></li>
             <li class="item"><button class="link" type="button">Веб-сайты</button></li>
             <li class="item"><button class="link" type="button">Приложения</button></li>
@@ -165,7 +171,8 @@
 
     <!--Подвал-->
     <footer class="footer-section">
-      <div class="container">
+      <div class="container footer-info">
+        <div class="footer-info-address">
         <a href="./index.html" class="footer-logo link">Web<span class="inner">Studio</span></a>
         <address>
           <ul class="list">
@@ -184,7 +191,38 @@
             </li>
             <li><a href="tel:+380961111111" class="info link">+38 096 111 11 11</a></li>
           </ul>
+          </div>
         </address>
+        <div class="footer-info-flex">
+          <h3 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+          <ul class="social-team-list">
+                  <li class="social-icon">
+                    <a href="" class="social-team-link">
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use href="./images/svgsprite/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="social-team-link">
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use href="./images/svgsprite/symbol-defs.svg#icon-twi"></use></svg
+                    ></a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="social-team-link">
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use href="./images/svgsprite/symbol-defs.svg#icon-fb"></use></svg
+                    ></a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="social-team-link">
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use href="./images/svgsprite/symbol-defs.svg#icon-in"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+        </div>
       </div>
     </footer>
   </body>

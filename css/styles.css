@@ -47,7 +47,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
   margin: 0 auto;
 }
 .page-header {
@@ -83,15 +82,13 @@ body {
   letter-spacing: 0.02em;
 }
 .title-info {
-  margin-right: 30px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 .site-nav .item + .item {
   margin-left: 50px;
 }
-.site-nav:hover,
-.site-nav:focus {
+.site-nav:hover {
   color: var(--accent-color);
 }
 .site-nav .current {
@@ -101,8 +98,6 @@ body {
 .site-contacts {
   display: flex;
   margin-left: auto;
-  margin-right: 30px;
-
   color: var(--header-contacts-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -112,15 +107,43 @@ body {
 .site-contacts .item + .item {
   margin-left: 50px;
 }
-.site-contacts:hover,
-.site-contacts:focus {
+.item-contacts {
+  margin-right: 30px;
+}
+.mail-icon-click {
+  margin-right: 10px;
+}
+.mail-icon {
+  justify-content: center;
+  align-items: center;
+  fill: var(--header-contacts-text-color);
+}
+.mail-icon:hover {
   color: var(--accent-color);
+}
+.mail-icon:hover .mail-icon-click {
+  fill: var(--accent-color);
+}
+.tel-icon-click {
+  margin-right: 10px;
+}
+.tel-icon {
+  justify-content: center;
+  align-items: center;
+  fill: var(--header-contacts-text-color);
+}
+.tel-icon:hover {
+  color: var(--accent-color);
+}
+.tel-icon:hover .tel-icon-click {
+  fill: var(--accent-color);
 }
 .heder-contacts {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
+
 .heder-contacts-icon {
   margin-right: 10px;
 }
@@ -153,6 +176,7 @@ body {
   margin-bottom: 30px;
 }
 .hero-button {
+  border: none;
   display: block;
   margin: 0 auto;
   width: 200px;
@@ -345,6 +369,7 @@ body {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .main-btn .item + .item {
   margin-left: 8px;
 }
@@ -352,11 +377,13 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .section-examples .item-flex:hover,
 .section-examples .item-flex:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .pic {
   display: block;
 }
@@ -376,6 +403,7 @@ body {
   margin-bottom: 0;
 }
 .main-btn .link {
+  border: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -390,6 +418,7 @@ body {
 .main-btn .link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .main-btn .link:current {
   color: var(--accent-color);
@@ -455,4 +484,22 @@ body {
 .footer-section .info:hover,
 .footer-section .info:focus {
   color: var(--accent-color);
+}
+
+.footer-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: baseline;
+}
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.footer-info-address {
+  margin-right: 70px;
 }
