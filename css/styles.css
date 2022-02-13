@@ -503,3 +503,6 @@ body {
 .footer-info-address {
   margin-right: 70px;
 }
+.link-color {
+  fill: var(--primary-white-color);
+}
